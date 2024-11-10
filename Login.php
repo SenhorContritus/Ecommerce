@@ -5,7 +5,7 @@ include('util.php');
     echo"
         <main id='login'>
         <h2 style='color: #d326da;'>Login</h2>
-        <div>
+        <div class='cel'>
         <form method ='post' action=''>
 
         <input type='text' id='email' name='email' placeholder='Digite seu email'><br><br> 
@@ -15,9 +15,10 @@ include('util.php');
         <input type='submit' id='submit' value='Login'>
         </form>
         <input style='width: 12.53vw; height:3vh;font-size:1.75vh;text-align:center; ' class='buttonGen' onclick='mudarTela(3)' value='Ainda não possui conta?'>
-        <a href='./esqueci.php'>Esqueci a senha</a>
+        <a href=''></a>
         </div>
         </main>"; //Nesse button que leva para o cadastrar usuário, ele precisa ficar igual ao botão salvar, que está acima do mesmo
+        // teste
         
     if($_POST){
         $email = $_POST['email'];

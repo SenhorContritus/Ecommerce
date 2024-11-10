@@ -40,7 +40,7 @@
         $nome = $linha['nome'];
         $html="<h4>Redefinir sua senha</h4><br>
                <b>$nome</b>, <br>
-               Clique no link para redefinir sua senha:<br>http://127.0.0.1/Ecommerce/redefinir.php?token=$token";
+               Clique no link para redefinir sua senha:<br>http://127.0.0.1/rafa/redefinir.php?token=$token";
 
                //https://projetoscti.com.br/projetoscti02/ecomm/redefinir.php?token=$token aqui tem q colocar o endereço do ecommerce dps, passando o token por get
 
