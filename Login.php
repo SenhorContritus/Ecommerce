@@ -15,7 +15,7 @@ include('util.php');
         <input type='submit' id='submit' value='Login'>
         </form>
         <input style='width: 12.53vw; height:3vh;font-size:1.75vh;text-align:center; ' class='buttonGen' onclick='mudarTela(3)' value='Ainda não possui conta?'>
-        <a href=''></a>
+        <a href='./esqueci.php'>Esqueci a senha</a>
         </div>
         </main>"; //Nesse button que leva para o cadastrar usuário, ele precisa ficar igual ao botão salvar, que está acima do mesmo
         
