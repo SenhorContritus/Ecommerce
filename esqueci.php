@@ -9,11 +9,11 @@
         exit;
     }
 
-    echo "<form action='' method='post'>
-          Enviar recuperacao da senha para<br>
+    echo "<main><center><div><form action='' method='post'>
+          <h2>Enviar recuperacao da senha para</h2><br>
           <input type='email' name='email'>
-          <input type='submit' value='Enviar'>
-        </form>";
+          <input type='submit'class=buttonGen value='Enviar'>
+        </main></center></form>";
 
   if ( $_POST ) {   
       /*
@@ -52,4 +52,5 @@
         }   
       } 
   }
+  include('rodape.php');
 ?>

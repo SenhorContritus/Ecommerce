@@ -17,9 +17,10 @@
         
         $select = $conn->query($varSQL);
 
-        echo "<main>";
-        echo"<br><br><p class=C>Produtos</p><br><br><table border=1>";
-        echo"<th>Id</th><th>Nome</th><th>Descrição</th><th>Preço</th><th>Excluído</th><th>Data de exclusão</th><th>Estoque</th><th>Cor</th><th>Alterar</th><th>Excluir</th>";
+        echo"<main style='overflow-y:scroll; padding:10vh; flex-direction:column    ;'>";
+        echo"<center><h2><span style='color: #81013f;'>Produtos<br><br></h2></center>
+            <div><table border=1 color=white>
+            <th>Id</th><th>Nome</th><th>Descrição</th><th>Preço</th><th>Excluído</th><th>Data de exclusão</th><th>Estoque</th><th>Cor</th><th>Alterar</th><th>Excluir</th>";
         while($linha = $select->fetch())
         {
             echo"<tr>";
@@ -61,9 +62,9 @@
             echo"</tr>";
             
         }
-        echo" </table>";
-        echo"<br><br> <a href='AdicionarProdutos.php?id=".$id_principal."'>Adicionar</a>";
-        echo"<br> <p class=C><a href='perfil.php?id=".$id_principal."'>Voltar</a></p>";
+        echo" </table></div>";
+        echo"<div><input type=button class='buttonGen' onclick='admBt(16, ".$id_principal.")'  value='Adicionar'></div>";
+        echo"<div><input type=button class='buttonGen' onclick='admBt(4, ".$id_principal.")'  value='Voltar' text-align: center></div>";
         echo"</main>";
 
         include('rodape.php');

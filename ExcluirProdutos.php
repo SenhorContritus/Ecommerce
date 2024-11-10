@@ -20,4 +20,5 @@
       echo"Excluído";
   }
   echo "<br><a href='produtos.php?id=".$id_principal."'>Voltar para o inicio</a>";
+  header('location: produtos.php');
 ?>

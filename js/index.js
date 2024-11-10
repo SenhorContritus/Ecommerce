@@ -1,12 +1,14 @@
 const tela = ['index.php','sobre.php', 'Login.php', 'CadastroUsuarios.php',
             'perfil.php', 'logout.php', 'carrinho.php', 'AlterarProdutos.php',
             'ExcluirUsuarios.php', 'incluir.php', 'excluir.php', 'finalizarCompra.php',
-            'AlterarUsuarios.php','produtos.php', 'usuarios.php', 'esqueci.php']
+            'AlterarUsuarios.php','produtos.php', 'usuarios.php', 'esqueci.php',
+            'AdicionarProdutos.php', 'relatorio.php']
             /*  
                 00 01 02 03 
                 04 05 06 07
                 08 09 10 11
                 12 13 14 15
+                16 17
             */
 const aside = $("aside")
 const divFiltro = $("#divFiltro")

@@ -17,8 +17,10 @@
         
         $select = $conn->query($varSQL);
 
-        echo"<main>";
-        echo"<p class=C color=>Usuarios</p><table border=1 color=white>
+        echo"<main style='overflow-y:scroll; overflow-x:scroll; padding:1vh; flex-direction:column    ;'>";
+        echo"<center><h2><span style='color: #81013f;'>Usuarios<br><br></h2></center>
+                <div>
+                <table border=1 color=white>
                 <th>Id</th><th>Nome</th><th>Email</th><th>Senha</th>
                 <th>Admin</th><th>Telefone</th><th>Alterar</th><th>Excluir</th><th>Definir admin</th>";
             while($linha = $select->fetch())
@@ -59,8 +61,8 @@
                 echo"</tr>";
                 
             }
-        echo" </table>";
-        echo"<p class=C><a href='perfil.php?id=".$id_principal."'>Voltar</a></p>";
+        echo" </table></div>";
+        echo"<div><input type=button class='buttonGen' onclick='admBt(4, ".$id_principal.")'  value='Voltar' text-align: center></div>";
         echo"</main>";
         include('rodape.php');
     

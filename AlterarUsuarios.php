@@ -84,12 +84,15 @@
                 
                 if($update->execute()>0){
                     echo"Alteração concluída";
+                    header('location: perfil.php');
                 }
                 if($id_principal == NULL){
                     echo "<br><a href='perfil.php?id=".$id_usuario."'>Voltar para o meu perfil</a>";
+                    header('location: perfil.php');
                 }
                 else{
                     echo "<br><a href='usuarios.php?id=".$id_principal."'>Voltar </a>"; 
+                    header('location: perfil.php');
                 }
             }
             else{
